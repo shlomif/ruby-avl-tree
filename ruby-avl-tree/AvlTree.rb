@@ -8,5 +8,12 @@ module AvlTree
            @value = val
        end
 
+       def add_left(l)
+           @left = l
+       end
+
+       def add_right(r)
+           @right = r
+       end
     end
 end
