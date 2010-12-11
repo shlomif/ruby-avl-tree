@@ -42,6 +42,7 @@ module AvlTree
             end
 
             @childs[which] = child
+            child.parent = self
                 
             if (@childs[other_child_idx(which)])
                 @balance_factor = 0
