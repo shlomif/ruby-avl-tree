@@ -13,7 +13,7 @@ module AvlTree
             @value = val
             @childs = [nil, nil]
             @balance_factor = 0
-            @parent = nil 
+            @parent = nil
         end
 
         def _calc_new_balance_factor(which)
@@ -43,7 +43,7 @@ module AvlTree
 
             @childs[which] = child
             child.parent = self
-                
+
             if (@childs[other_child_idx(which)])
                 @balance_factor = 0
             else
